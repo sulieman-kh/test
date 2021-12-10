@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --heading: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Roboto Slab", serif;
+  background: rgb(255, 255, 255);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 8px 2px #c2bfbf;
+}
+img.logo {
+  width: 40px;
+  position: relative;
+  left: 200px;
+}
+img.user {
+  width: 40px;
+  position: relative;
+  left: -180px;
+}
+.input {
+  width: 500px;
+}
+.vertical {
+  border-left: 1px solid #c2bfbf;
+  height: 80px;
+  position: absolute;
+  left: 67%;
+}
+a {
+  position: relative;
+  left: -190px;
+}
+h1 {
+  margin: 100px;
+}
+.flex-container {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 80px;
+  list-style: none;
+}
+.flex-item {
+  /* background: tomato; */
+  padding: 5px;
+  width: 270px;
+  height: 120px;
+  line-height: 150px;
+  border: 0.3px solid #d8d6d6;
+  border-radius: 5px;
+  margin: 10px;
+}
+i.fas.fa-user {
+  display: none;
+}
+.flex-item:hover {
+  box-shadow: 0px 0px 8px 2px #ececec;
+}
+@media only screen and (min-width: 745px) and (max-width: 1439px) {
+  img.logo {
+    position: relative;
+    left: -10px;
+  }
+  .vertical {
+    left: 79%;
+  }
+  img.user {
+    width: 40px;
+    position: relative;
+    left: 10px;
+  }
+  a {
+    position: relative;
+    left: 10px;
+  }
+  h1 {
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  .flex-container {
+    display: inline;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .flex-item {
+    width: 229px;
+  }
+}
+/* and (max-width: 744px) */
+@media only screen and (min-width: 375px) and (max-width: 744px) {
+  h1 {
+    font-size: 28px;
+    font: bold;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .flex-item {
+    margin-left: 20px;
+    width: 335px;
+    height: 140px;
+  }
+  .header {
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  img.logo {
+    width: 40px;
+    margin-right: 300px;
+    position: relative;
+    left: 10px;
+  }
+  i.fas.fa-user {
+    display: inline;
+    margin-left: 300px;
+    position: relative;
+    top: -65px;
+    color: rgba(52, 170, 221, 1);
+  }
+  .vertical {
+    display: none;
+  }
+  a {
+    display: none;
+  }
+  img.user {
+    display: none;
+  }
+  .input {
+    width: 370px;
+    position: relative;
+    top: 45px;
+  }
+}
